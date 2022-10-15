@@ -9,5 +9,5 @@ print('esse é o meu \'texto\'')
 print("esse é o meu \"texto\"")
 
 # quebra de linha
-print('primeira linha.\nsegunda linha.')
+print('primeira linha.\n segunda linha.')
 
