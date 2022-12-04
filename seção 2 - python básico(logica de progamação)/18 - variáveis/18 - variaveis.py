@@ -11,7 +11,7 @@ print(e_maior)
 
 
 print(
-    '\n nome:', nome,
+    ' nome:', nome,
     '\n altura:', altura,
     '\n peso:', peso,
     '\n idade:', idade,
