@@ -20,10 +20,11 @@ print('200' + '200')
 print(str(20))
 print(type(20))
 
+# resto de divisão
 print(10 % 2)
 
 print(10 ** 2)
 
-# precedência dos operadores aritméticos
+# precedência dos operadores aritméticos: qual vem primeiro
 print((10 + 10) * 2)
 
