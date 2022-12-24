@@ -3,7 +3,7 @@
 #        01234567891011
 nome =  'luiz_gustavo'
 
-print(nome[0:8])
+print(nome[:-1])
 print(len(nome))  # contagem de caracteres
 
 
