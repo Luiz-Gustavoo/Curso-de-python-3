@@ -20,5 +20,7 @@ while contador_idades_int <=30:
 
 
 print('acabou') 
+print('teste')
+
 
 
