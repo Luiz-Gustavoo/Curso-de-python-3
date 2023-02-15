@@ -11,12 +11,15 @@ nome_formatado = ''
 len_nome_formatado = len(nome_formatado)
 
 while len_nome_formatado < len_nome:
-    if len(nome) == len(nome_formatado):
+    if len(nome_formatado) == len(nome):
         break
+    
     indice_nome = nome[contador_indice]
     nome_formatado += indice_nome
     contador_indice +=1
+
+    if len(nome_formatado) == len(nome):
+        print(nome_formatado)
     
-    print(nome_formatado)    
     
 
