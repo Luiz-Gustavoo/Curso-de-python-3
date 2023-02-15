@@ -9,9 +9,11 @@ while numero_tentativas > 0:
 
     if pergunta1 == resposta_pergunta1:
         print('você acertou')
+        break
     else:
         print('você errou')
         numero_tentativas -=1
+
     if numero_tentativas <= 0:
         print('suas tentativas acabaram')
-        
+
