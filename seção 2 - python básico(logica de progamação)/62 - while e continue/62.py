@@ -10,7 +10,7 @@ while contador_idades_int <=30:
 
     if idade_int == 20:
         print('20 é inválido')
-        continue
+        continue 
     
     print(f'idade: {idade_int}')
 
