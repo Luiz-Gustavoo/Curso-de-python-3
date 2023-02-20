@@ -15,5 +15,16 @@ while contador_indice < len(nome):
     
 print(nome_formatado)    
     
-    
+'''
+nome = 'luiz'
+novo_nome = ''
+contador = 0
+
+while contador < len((nome)):
+    letra = nome[contador]
+    print(letra)
+    contador+=1
+    novo_nome +=f'*{letra}'
+print(novo_nome)
+'''
 
