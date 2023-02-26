@@ -10,7 +10,7 @@ while contador_indice < len(frase):
     if letra_atual == ' ':
         contador_indice+=1
         continue
-
+    
     quantas_vezez_apareceu = frase.count(letra_atual)
 
     if qtd_apareceu_mais < quantas_vezez_apareceu:
