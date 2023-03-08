@@ -14,28 +14,21 @@ na palavra secreta.
 Faça a contagem de tentativas do seu
 usuário.
 """
-
+     #             0123456789
 palavra_secreta = 'computador'
+indice_palavra_secreta = 0
 palavra_formatada = ''
-numero_tentativa = 0
+indice_palavra_formatada = 0
+
 
 print('                         JOGO DA PALAVRA SECRETA                                ')
 print('                 tente adivinhar a palavra letra por letra                      ')
 print('-'* 100)
 
 for letras in palavra_secreta:
-    input_letra = input('digite uma letra: ')
+    input_letra = str(input('digite uma letra: '))
 
     if input_letra in palavra_secreta:
         palavra_formatada += input_letra
-        print(input_letra)
-    
-    else:
-        print('letra errada')
-        palavra_formatada = '*' * len(palavra_secreta)
-        print(palavra_formatada)
-        continue
-      
 else:
-    print('você adivinhou a palavra secreta')
-    print(palavra_formatada)
+    print(palavra_formatada)        
