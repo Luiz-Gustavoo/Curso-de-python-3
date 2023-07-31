@@ -5,7 +5,7 @@ só pode ser usado uma vez
 #           0        1        2
 lista = ['maria', 'helena', 'luiz']
 lista_enumerada = tuple(enumerate(lista))
-print(lista_enumerada)
+print(lista_enumerada[0][1])
 #        0              1           2
 #   0       1     0     1        0     1
 # ((0, 'maria'), (1, 'helena'), (2, 'luiz'))
