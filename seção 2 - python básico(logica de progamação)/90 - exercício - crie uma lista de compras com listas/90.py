@@ -33,8 +33,7 @@ while True:
             if indice == apagar_item:
                 del lista_mercado[apagar_item]
         """
-        
-            
+              
     elif opcao_lista == 'l':
         for indice, item_mercado in enumerate(lista_mercado):
             print(indice, item_mercado)
