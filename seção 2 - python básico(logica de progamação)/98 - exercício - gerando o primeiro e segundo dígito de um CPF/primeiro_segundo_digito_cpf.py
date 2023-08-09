@@ -26,6 +26,7 @@ O primeiro dígito do CPF é 7
 """
 Calculo do segundo dígito do CPF
 CPF: 746.824.890-70
+CPF: 74682489070
 Colete a soma dos 9 primeiros dígitos do CPF,
 MAIS O PRIMEIRO DIGITO,
 multiplicando cada um dos valores por uma
@@ -51,7 +52,7 @@ O segundo dígito do CPF é 0
 """
 
 # int não é iterável
-CPF = '74682489070'
+CPF = '36450622973'
 # CALCULANDO O SEGUNDO DÍGITO
 contagem_regressiva = 10
 soma_resultado_multiplicacao = 0
@@ -78,11 +79,11 @@ soma_resultado_multiplicado = soma_resultado_multiplicacao * 10
 resto_soma_resultado = soma_resultado_multiplicado % 11
 
 # calculando se o resultado do resto é válido
-if resto_soma_resultado > 9:
-    primeiro_digito = 0
+if resto_soma_resultado <= 9:
+    primeiro_digito = resto_soma_resultado
     print(f'O primeiro dígito do CPF é: {primeiro_digito}')
 else:
-    primeiro_digito = resto_soma_resultado
+    primeiro_digito = 0
     print(f'O primeiro dígito do CPF é: {primeiro_digito}')
 
 # CALCULANDO O SEGUNDO DÍGITO
@@ -98,13 +99,13 @@ for digitos in cpf_dez_digitos:
 
 # multiplicando o resultado da soma e pegando o resto dele
 segundo_digito = (soma_resultado_multiplicacao_2 * 10) % 11
-segundo_digito = 0 if segundo_digito > 9 else segundo_digito
+segundo_digito = segundo_digito if segundo_digito <= 9 else 0
 
 print(f'O segundo digito do CPF é : {segundo_digito}')
 
 # validando o CPF digitado com o gerado pelo sistema
 cpf_gerado_pelo_sistema = f'{CPF[:9]}{primeiro_digito}{segundo_digito}'
-print(cpf_gerado_pelo_sistema)
+print(f'CPF gerado pelo sistema: {cpf_gerado_pelo_sistema}')
 
 if CPF == cpf_gerado_pelo_sistema:
     print(f'{CPF} é válido')
