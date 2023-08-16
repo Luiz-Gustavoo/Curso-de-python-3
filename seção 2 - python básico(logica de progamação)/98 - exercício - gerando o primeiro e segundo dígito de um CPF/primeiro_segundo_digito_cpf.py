@@ -52,7 +52,7 @@ O segundo dígito do CPF é 0
 """
 
 # int não é iterável
-CPF = '36450622973'
+CPF = '74682489070'
 # CALCULANDO O SEGUNDO DÍGITO
 contagem_regressiva = 10
 soma_resultado_multiplicacao = 0
